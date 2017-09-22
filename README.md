@@ -25,3 +25,10 @@ Webpack Loaders
 
 I've just created a release branch. In addition I want to create a release.
 You can find what is a release [here](https://help.github.com/articles/creating-releases/)
+
+Release 02
+==========
+In this release I want to copy the ***index.html*** file from the *src* directory to the *dist* directory
+For this reason we use: [html-webpack-plugin](https://github.com/jantimon/html-webpack-plugin)
+
+A good explanation Video by Mirko Nasato of how to use this loader can be found [here](https://www.youtube.com/watch?v=lPhZW8ZyUA4&list=PLgGUMhSgtxJyIQ4vI3BzlCzZLHL79Ew6p&index=5) and also in Stack-Overflow [here](https://stackoverflow.com/questions/32155154/webpack-config-how-to-just-copy-the-index-html-to-the-dist-folder/34925111)
