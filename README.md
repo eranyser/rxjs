@@ -5,7 +5,7 @@ On-going seed project.
 # Release 01
 This first seed includes:
 
- 1. Webpack
+ 1. Webpack - the simplest way to use webpack.
  2. typescript loader
  3. css & scss loaders
 
