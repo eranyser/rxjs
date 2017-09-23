@@ -42,3 +42,12 @@ In this release I am upgrading the current code:
  1. Importing a *Person* Object in index.ts from module.ts file to see that typescript is working.
  2. adding a watch script in webpack.config.js
  3. adding resolve extentions in webpack.config.js
+
+Release 04
+==========
+
+ 1. adding the files in folder  ./dist to .gitignore.
+ 2. Creating one css bundle for all our css/scss files.
+	 1. we are using *extract-text-webpack-plugin*
+	 2. replacing the rules in webpack.config.js
+The plugin creates the file in the output directory, in our case ./dist. and insert the *link* tag to the index.html file.
