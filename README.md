@@ -51,3 +51,10 @@ Release 04
 	 1. we are using *extract-text-webpack-plugin*
 	 2. replacing the rules in webpack.config.js
 The plugin creates the file in the output directory, in our case ./dist. and insert the *link* tag to the index.html file.
+
+Release 05
+==========
+
+ 1. Add source map to both javascript & css files.
+ 2. adding *devtool: 'inline-source-map'* to our webpack.config.js
+ 3. adding source maps to css by changing the *extract-text-webpack-plugin*
