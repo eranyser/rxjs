@@ -1,14 +1,21 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const ExtractTextPlugin = require("extract-text-webpack-plugin");
+const CleanWebpackPlugin = require('clean-webpack-plugin');
 
 module.exports = {
-    entry: './src/index.ts',
+    entry: {
+        app: './src/index.ts',
+        about: './src/js/about.ts'
+    },
     output: {
-        filename: 'bundle.js',
+        filename: '[name].bundle.js',
         path: path.resolve(__dirname, 'dist')
     },
     devtool: 'inline-source-map',
+    devServer: {
+        contentBase: './dist'
+    },
     module: {
       rules: [
         {
@@ -45,6 +52,7 @@ module.exports = {
         extensions: ['*', '.ts', '.js', '.json'],
     },
     plugins: [
+        new CleanWebpackPlugin(['dist']),
         new HtmlWebpackPlugin({
             template: "./src/index.html"
         }),
