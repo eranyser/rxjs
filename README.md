@@ -58,3 +58,13 @@ Release 05
  1. Add source map to both javascript & css files.
  2. adding *devtool: 'inline-source-map'* to our webpack.config.js
  3. adding source maps to css by changing the *extract-text-webpack-plugin*
+
+Release 06
+==========
+**Create multiple bundles**
+
+ 1. Change the entry point in the webpack.config.js to include several enty points
+ 2. change the output to inlcude the [name] prefix.
+ 3. Adding clean-webpack-plugin to clean the dist folder each time we do the build.
+ 4. Adding webpack-dev-server, in the webpack.config.js tell the server where to take the files. and add
+    a new script to package.json.
