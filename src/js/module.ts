@@ -1,6 +1,7 @@
 // export default function hello() {
 //   console.log('Hello from JS Module');
 // }
+
 export class Person {
   name = "Eran";
 
@@ -9,7 +10,19 @@ export class Person {
     this.name = "Eran Weiser";
   }
   sayHello()
-  {
+  {/*
+      var promise = new Promise(function(resolve, reject) {
+          // do a thing, possibly async, then…
+          /*
+          if (true) {
+              resolve("Stuff worked!");
+          }
+          else {
+              reject(Error("It broke"));
+          }
+          * /
+      });
+*/
     console.log("Hello " + this.name);
   }
 }
