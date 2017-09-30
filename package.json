@@ -8,8 +8,7 @@
     "build:progress": "webpack --progress",
     "build:prod": "webpack -p --progress",
     "watch": "webpack --watch",
-    "start": "webpack-dev-server --open",
-    "start:watch": "webpack-dev-server --open --watch --inline"
+    "start": "webpack-dev-server --open --watch --inline",
   },
   "repository": {
     "type": "git",
