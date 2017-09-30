@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build": "webpack",
+    "build:progress": "webpack --progress",
     "watch": "webpack --watch",
     "start": "webpack-dev-server --open"
   },
@@ -16,8 +17,10 @@
   "author": "Robert Guss - www.howtocode.io, www.robertguss.com",
   "license": "MIT",
   "devDependencies": {
+    "@types/core-js": "^0.9.43",
     "awesome-typescript-loader": "^3.2.3",
     "clean-webpack-plugin": "^0.1.17",
+    "core-js": "^2.5.1",
     "css-loader": "^0.28.5",
     "extract-text-webpack-plugin": "^3.0.0",
     "html-webpack-plugin": "^2.30.1",
@@ -27,5 +30,8 @@
     "typescript": "^2.5.2",
     "webpack": "^3.5.5",
     "webpack-dev-server": "^2.8.2"
+  },
+  "dependencies": {
+
   }
 }
