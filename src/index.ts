@@ -1,17 +1,25 @@
-import "core-js";
+//import "core-js";
 
-//import './css/main.css';
-import './scss/main.scss';
-//import {hello, sup} from './js/module';
-import {Person} from './js/module';
-import {About} from './js/about';
-let test = "this is a test!";
-console.log(test);
+import { Observable } from '../node_modules/rxjs/Observable';
+import '../node_modules/rxjs/add/observable/from';
 
-let p = new Person();
-p.sayHello();
-About();
-/*
-hello();
-sup();
-*/
+let numbers = [5, 10, 15];
+
+let source = Observable.from(numbers);
+
+class MyObserver {
+    next(value) {
+        console.log(`value: ${value}`);
+    }
+
+    error(e) {
+        console.log(`Error: ${e}`);
+    }
+
+    complete() {
+        console.log("complete");
+    }
+
+}
+
+source.subscribe(new MyObserver())

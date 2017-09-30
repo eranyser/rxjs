@@ -8,7 +8,8 @@
     "build:progress": "webpack --progress",
     "build:prod": "webpack -p --progress",
     "watch": "webpack --watch",
-    "start": "webpack-dev-server --open"
+    "start": "webpack-dev-server --open",
+    "start:watch": "webpack-dev-server --open --watch --inline"
   },
   "repository": {
     "type": "git",
@@ -19,6 +20,7 @@
   "license": "MIT",
   "devDependencies": {
     "@types/core-js": "^0.9.43",
+    "@types/rx": "^4.1.1",
     "awesome-typescript-loader": "^3.2.3",
     "clean-webpack-plugin": "^0.1.17",
     "core-js": "^2.5.1",
@@ -33,6 +35,6 @@
     "webpack-dev-server": "^2.8.2"
   },
   "dependencies": {
-
+    "rxjs": "^5.4.3"
   }
 }
