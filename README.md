@@ -78,3 +78,8 @@ libraries like *core-js* that support new standard for old browsers are usually 
  you can read about it [here](https://blogs.msdn.microsoft.com/typescript/2016/06/15/the-future-of-declaration-files/) and also [here](https://stackoverflow.com/questions/37548066/typescript-typings-in-npm-types-org-packages)
  For now, we must add @types/core-js to our package.json.
  3. adding import "core-js"; to index.js to load this library. this library includes all global objects and there is no explicit load for each one of the globals.
+
+Release 07
+==========
+
+ 1. Script to build a production version

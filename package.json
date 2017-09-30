@@ -6,6 +6,7 @@
   "scripts": {
     "build": "webpack",
     "build:progress": "webpack --progress",
+    "build:prod": "webpack -p --progress",
     "watch": "webpack --watch",
     "start": "webpack-dev-server --open"
   },
