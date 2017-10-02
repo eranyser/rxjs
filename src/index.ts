@@ -1,7 +1,8 @@
 //import "core-js";
 
-import { Observable } from '../node_modules/rxjs/Observable';
-import '../node_modules/rxjs/add/observable/from';
+//import { Observable } from '../node_modules/rxjs/Observable';
+import { Observable } from 'rxjs/Observable';
+import 'rxjs/add/observable/from';
 
 let numbers = [5, 10, 15];
 
