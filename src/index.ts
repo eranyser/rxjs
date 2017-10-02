@@ -8,7 +8,20 @@ import { Observable } from "rxjs/Observable";
 let numbers = [5, 10, 15];
 
 let source = Observable.from(numbers);
+let source2 = Observable.create(observer => {
 
+    let index = 0;
+
+    let produceValue = () => {
+        observer.next(numbers[index++])
+        if (index < numbers.length) {
+            setTimeout(produceValue, 2000)
+        }
+        else
+            observer.complete();
+    }
+    produceValue();
+})
 
 class MyObserver {
     next(value) {
@@ -25,4 +38,6 @@ class MyObserver {
 
 }
 
-source.subscribe(new MyObserver())
+//source.subscribe(new MyObserver());
+
+source2.subscribe(value => console.log(value) , e => console.log("Error"), () => console.log("Complete"));
