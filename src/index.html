@@ -2,8 +2,32 @@
 <html>
 <head>
     <title>Let's learn RXLS</title>
+
 </head>
 <body>
-    Hello RXJS
+    <u>Hello RXJS</u>
+    <br />
+    <br />
+    <select id="method_select" onchange="selectionChanged()">
+        <option value="" disabled selected hidden>Please Choose...</option>
+        <option value="simple.method">Simple Rcursing method, no observable</option>
+        <option value="observable.from">Observable from the array</option>
+        <option value="observable.create">Observable by create with timeout</option>
+        <option value="observable.inc">Observable that Increment numbers</option>
+        <option value="clock">Clock that shows time</option>
+    </select> 
+
+    <p id="view_selection"></p>
+
+    <p>The numbers through simple recursive method, no observables : <span id="recursive"></span></p>
+
+    <p>Display the numbers with observalbles : <span id="observ"></span></p>
+
+    <p>The numbers through Observable create method with delay: <span id="create"></span></p>
+
+    <p>Incremented number: <span id="Increment"></span></p>
+
+    <p>The time is: <span id="time"></span></p>
+    
 </body>
 </html>
